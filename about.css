@@ -8,9 +8,6 @@ html {
     box-sizing: border-box;
 }
 
-/* html {
-
-} */
 .about{
     width: 100%;
     padding: 7.8rem 0rem;
@@ -86,25 +83,3 @@ button:hover{
         font-size: 35%;
     }
 }
-/* body {
-    position: absolute;
-width: 1440px;
-height: 825px;
-left: 3px;
-top: 42px;
-
-background: #F2EBFB;
-      }
-h1 {
-  text-align: center;
-   height: 56px;
-    margin-left:auto;
-    margin-right:auto;
-    top: 27px;
-    font-family: 'Trebuchet MS';
-    font-style: oblique;
-    font-weight: bold;
-    font-size: 100px;
-    line-height: 50px;
-    color: palevioletred;
-  } */
