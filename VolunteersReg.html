@@ -17,32 +17,52 @@
     <form action="#">
     <div class="user-details">
         <div class="input-box">
-            <span class="details">Full Name</span>
-            <input type="text" placeholder="Enter your full name" required>
+            <label class="details" for="name">Full Name:</label>
+            <input type="text" placeholder="Yash Sharma" id="name" required>
         </div><!--input-box end-->
         <div class="input-box">
-            <span class="details">Email-ID</span>
-            <input type="email" placeholder="Enter your Email-ID" required>
+            <label class="details" for="email">Email-ID:</label>
+            <input type="email" placeholder="example10@gmail.com" id="email" required>
         </div><!--input-box end-->
         <div class="input-box">
-            <span class="details">Age</span>
-            <input type="number" placeholder="Enter your Age" required>
+            <label class="details" for="age">Age:</label>
+            <input type="number" placeholder="21" min="1" max="100" id="age" required>
         </div><!--input-box end-->
         <div class="input-box">
-            <span class="details">College/School name</span>
-            <input type="text" placeholder="Enter your College/School name" required>
+            <label class="details" for="clg">College/School name:</label>
+            <input type="text" placeholder="Example Public School" id="clg" required>
         </div><!--input-box end-->
     </div><!--user-details end-->
-    <div class="department">
-        <span class="department-title">Department Choice:</span>
+    <div class="team">
+        <label class="team-title">Team Choice:</label>
+        <div class="team-choice">
+            <input type="radio" name="team-choice" id="creatives" value="Creatives Team">
+            <label for="creatives">Creatives Team</label>
+        </div>
+        <div class="team-choice">
+            <input type="radio" name="team-choice" id="social-media" value="Social Media Team">
+            <label for="social-media">Social Media Team</label>
+        </div>
+        <div class="team-choice">
+            <input type="radio" name="team-choice" id="content&info" value="Content and Information Team">
+            <label for="content&info">Content and Information Team</label>
+        </div>
+        <div class="team-choice">
+            <input type="radio" name="team-choice" id="logistics" value="Logistics Team">
+            <label for="logistics">Logistics Team</label>
+        </div>
+        <div class="team-choice">
+            <input type="radio" name="team-choice" id="publicity" value="Publicity Team">
+            <label for="publicity">Publicity Team</label>
+        </div>    
+        
+        
     </div><!--department end-->
     <div class="button">
         <input type="submit" value="Register">
-        <input type="reset" value="Reset">
     </div><!--button end-->
     
     </form>
-    
     </div><!--content end-->
 </div><!--container end-->
 </body>
