@@ -1,0 +1,44 @@
+body {
+    position: absolute;
+width: 1440px;
+height: 825px;
+left: 3px;
+top: 42px;
+
+background: #F2EBFB;
+      }
+h1 {
+  text-align: center;
+   height: 56px;
+    margin-left:auto;
+    margin-right:auto;
+    top: 27px;
+    font-family: 'Trebuchet MS';
+    font-style: oblique;
+    font-weight: bold;
+    font-size: 100px;
+    line-height: 50px;
+    color: palevioletred;
+  }
+p{ 
+text-align: left;
+font-size: 40px;
+  margin-left:20px;
+}
+#list {
+  border-spacing:40px;
+  margin-left:150px;
+  margin-right:auto;
+      }
+#listbox {
+  border: 10px inset rgb(185, 81, 255);
+  margin-left:auto;
+  margin-right:auto;
+  align-content:center;
+          }
+#grid {
+  margin-left:auto;
+  margin-right:auto;
+  padding: 40px;
+}
+

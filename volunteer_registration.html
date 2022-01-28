@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="static/css/volunteer_registration.css" />
+    <title>Volunteer Registration</title>
+    <meta name="Viewport" content="width=device-width, initial scale=1.0" />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="title">TIE CLUB</div>
+      <!--title end-->
+      <div class="sub-title">Volunteer Registration Form</div>
+      <!--sub-title end-->
+
+      <div class="content">
+        <form action="#">
+          <div class="user-details">
+            <div class="input-box">
+              <label class="details" for="name">Full Name:</label>
+              <input type="text" placeholder="Yash Sharma" id="name" required />
+            </div>
+            <!--input-box end-->
+            <div class="input-box">
+              <label class="details" for="email">Email-ID:</label>
+              <input
+                type="email"
+                placeholder="example10@gmail.com"
+                id="email"
+                required
+              />
+            </div>
+            <!--input-box end-->
+            <div class="input-box">
+              <label class="details" for="age">Age:</label>
+              <input
+                type="number"
+                placeholder="21"
+                min="1"
+                max="100"
+                id="age"
+                required
+              />
+            </div>
+            <!--input-box end-->
+            <div class="input-box">
+              <label class="details" for="clg">College/School name:</label>
+              <input
+                type="text"
+                placeholder="Example Public School"
+                id="clg"
+                required
+              />
+            </div>
+            <!--input-box end-->
+          </div>
+          <!--user-details end-->
+          <div class="team">
+            <label class="team-title">Team Choice:</label>
+            <div class="team-choice">
+              <input
+                type="radio"
+                name="team-choice"
+                id="creatives"
+                value="Creatives Team"
+              />
+              <label for="creatives">Creatives Team</label>
+            </div>
+            <div class="team-choice">
+              <input
+                type="radio"
+                name="team-choice"
+                id="social-media"
+                value="Social Media Team"
+              />
+              <label for="social-media">Social Media Team</label>
+            </div>
+            <div class="team-choice">
+              <input
+                type="radio"
+                name="team-choice"
+                id="content&info"
+                value="Content and Information Team"
+              />
+              <label for="content&info">Content and Information Team</label>
+            </div>
+            <div class="team-choice">
+              <input
+                type="radio"
+                name="team-choice"
+                id="logistics"
+                value="Logistics Team"
+              />
+              <label for="logistics">Logistics Team</label>
+            </div>
+            <div class="team-choice">
+              <input
+                type="radio"
+                name="team-choice"
+                id="publicity"
+                value="Publicity Team"
+              />
+              <label for="publicity">Publicity Team</label>
+            </div>
+          </div>
+          <!--department end-->
+          <div class="button">
+            <input type="submit" value="Register" />
+          </div>
+          <!--button end-->
+        </form>
+      </div>
+      <!--content end-->
+    </div>
+    <!--container end-->
+  </body>
+</html>
