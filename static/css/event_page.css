@@ -1,0 +1,129 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    background-color: #F2EBFB;
+}
+.body{
+   
+    overflow: hidden;
+}
+
+.heading{
+    height: 56px;
+    margin-left:auto;
+    margin-right:auto;
+    margin-bottom: 30px;
+    font-weight: bold;
+    font-size: 35px;
+    line-height: 50px;
+    align-items: center;
+    text-align: center;
+    font-weight: bold;
+    color: purple;
+    padding-top: 40px;
+    
+}
+
+.events{
+    display: grid;
+    grid-template-columns: repeat(2,0.38fr);
+    grid-gap: 20px;   
+    align-items: center;
+    justify-content: center;
+    
+   
+}
+.short{
+    font-family: 'Josefin Sans', sans-serif;
+    text-align: left;
+    font-size: 1.5rem;
+    margin-top: 5px;
+    color: purple;
+    align-items: center;
+    justify-content: center;
+
+}
+.long{
+    font-family: 'Josefin Sans', sans-serif;
+    text-align: center;
+    font-size: 1.8rem;
+    margin-top: 40px;
+    margin-left: 200px;
+    margin-right: 200px;
+    color: purple;
+    align-items: center;
+    justify-content: center;
+    grid-auto-rows: minmax(300px,auto);
+}
+.box{
+    border-radius: 10px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.image img{
+ height: 288px;
+    width: 512px;
+    border: 8px inset rgb(185, 81, 255);
+    border-radius: 10px;
+    backface-visibility: hidden;   
+    margin-top: 15px;
+}
+@media (max-width:850px ) {
+    .heading{
+        height: 48px;
+        margin-left:auto;
+        margin-right:auto;
+        margin-bottom: 30px;
+        font-weight: bold;
+        font-size: 30px;
+        line-height: 30px;
+        align-items: center;
+        text-align: center;
+        font-weight: bold;
+        color: purple;
+        padding-top: 40px;
+        
+    }
+    
+    .events{
+        display: grid;
+        grid-template-columns: 0.40fr;
+        grid-gap: 50px;
+        grid-auto-rows: minmax(288px,auto);   
+        align-items: center;
+        justify-content: center;
+    }
+
+    .image img{
+        height: 288px;
+        width: 512px;
+        border: 8px inset rgb(185, 81, 255);
+        border-radius: 10px;
+        backface-visibility: hidden;   
+        margin-top: 15px;    
+    }
+    .short{
+        font-family: 'Josefin Sans', sans-serif;
+        text-align: center;
+        font-size: 1.5rem;
+        margin-top:1px;
+        color: purple;
+        align-items: center;
+        justify-content: center;
+    
+    }
+    .long{
+        font-family: 'Josefin Sans', sans-serif;
+        text-align: center;
+        font-size: 1.6rem;
+        margin-top: 1px;
+        margin-left: 100px;
+        margin-right: 100px;
+        color: purple;
+        align-items: center;
+        justify-content: center;
+    }
+    
+};
