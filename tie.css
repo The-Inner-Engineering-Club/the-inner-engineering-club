@@ -1,0 +1,170 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    background-color: #F2EBFB;
+}
+.body{
+   
+    overflow: hidden;
+}
+
+.heading{
+    align-items: center;
+    font-size: 2rem;
+    text-align: center;
+    font-weight: bold;
+    color: purple;
+    padding-top: 40px;
+    
+}
+
+.departments{
+    padding-top: 30px;
+    align-items: center;
+    font-size: 1.6rem;
+    text-align: center;
+    font-weight: bold;
+    color: purple;
+
+}
+
+.executives{
+    display: grid;
+    grid-template-columns: repeat(2,0.38fr);
+   
+    align-items: center;
+    justify-content: center;
+    
+   
+}
+
+.box{
+    margin-top: 70px;
+  
+    
+    border-radius: 10px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.image img{
+    height: 180px;
+    border-radius: 50%;
+    border: 2px solid plum;
+    backface-visibility: hidden;
+    
+    margin-top: 15px;
+    margin-bottom: 10px;
+    transition: all .5s ease-in-out;
+
+}
+
+
+.box:hover .image img{
+    transform: scale(1.2);
+}
+
+.name{
+    text-align: center;
+    font-size: 1.2rem;
+    margin-top: 5px;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.post{
+    text-align: center;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    font-family: 'Alfa Slab One', cursive;
+    font-family: 'Neuton', serif;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: lighter;
+    margin-top: 15px;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.content{
+    display: grid;
+    grid-template-columns: repeat(3,0.5fr);
+    
+   
+}
+
+.creatives{
+    display: grid;
+    grid-template-columns: repeat(2,0.38fr);
+   
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.logistics{
+    display: grid;
+    grid-template-columns: repeat(3,0.5fr);
+  
+   
+}
+
+.publicity{
+    display: grid;
+    grid-template-columns: repeat(2,0.38fr);
+   
+    align-items: center;
+    justify-content: center;
+    
+   
+}
+
+.social-media{
+    display: grid;
+    grid-template-columns: repeat(2,0.38fr);
+    
+    align-items: center;
+    justify-content: center;
+    
+   
+}
+
+.volunteers{
+    display: grid;
+    grid-template-columns: repeat(6,0.5fr);
+   
+    align-items: center;
+    justify-content: center;
+}
+
+.box1 {
+    margin-bottom: 5px;
+
+}
+.name1{
+    margin-bottom: 15px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: -5px;
+}
+.image1 img{
+    height: 100px;
+    border-radius: 50%;
+    border: 2px solid plum;
+    backface-visibility: hidden;
+    margin-left: 73px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    transition: all .5s ease-in-out;
+
+}
+
+
+.box1:hover .image1 img{
+    transform: scale(1.2);
+}
