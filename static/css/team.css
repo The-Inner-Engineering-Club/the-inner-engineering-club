@@ -1,9 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap");
+
 *{
     margin: 0px;
     padding: 0px;
     background-color: #F2EBFB;
     
 }
+
+html {
+    font-family: "Manrope", sans-serif;
+  }
 .body{
     overflow: hidden;
     
@@ -20,11 +26,14 @@ header nav {
     filter: drop-shadow(0px 10px 5px #bebebe);
     text-decoration: none
   }
-  
+  header nav a {
+    background-color: #fff9f9;
+  }
   header nav img {
     width: 2.25em;
     height: auto;
     margin: 0 1em;
+    background-color: #fff9f9;
   }
   
   header nav ul {
@@ -214,3 +223,29 @@ header nav {
 .box1:hover .image1 img{
     transform: scale(1.2);
 }
+
+footer {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 1em;
+  }
+  
+  footer img {
+    width: 2.25em;
+    height: auto;
+    margin: 0 1em;
+  }
+  
+  footer ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    list-style-type: none;
+  }
+  
+  footer ul li a img {
+    width: 1.5em;
+  }
+  

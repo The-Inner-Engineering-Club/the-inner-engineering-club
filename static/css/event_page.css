@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap");
 *{
     margin: 0px;
     padding: 0px;
@@ -6,7 +7,10 @@
 html {
     font-family: "Manrope", sans-serif;
   }
-header nav {
+.body{
+    overflow: hidden;
+  }  
+  header nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -18,11 +22,14 @@ header nav {
     filter: drop-shadow(0px 10px 5px #bebebe);
     text-decoration: none
   }
-  
+  header nav a {
+    background-color: #fff9f9;
+  }
   header nav img {
     width: 2.25em;
     height: auto;
     margin: 0 1em;
+    background-color: #fff9f9;
   }
   
   header nav ul {
@@ -51,25 +58,20 @@ header nav {
     background-color: #575757;
     color: #fff9f9;
   }
+  
+ 
 .body{
    
     overflow: hidden;
 }
 
 .heading{
-    height: 56px;
-    margin-left:auto;
-    margin-right:auto;
-    margin-bottom: 30px;
-    font-weight: bold;
-    font-size: 30px;
-    line-height: 50px;
-    align-items: center;
-    text-align: center;
-    font-weight: bold;
-    color: purple;
-    padding-top: 40px;
-    
+  align-items: center;
+  font-size: 2rem;
+  text-align: center;
+  font-weight: bold;
+  color: purple;
+  padding-top: 40px;
 }
 
 .events{
@@ -77,9 +79,7 @@ header nav {
     grid-template-columns: repeat(2,0.38fr);
     grid-gap: 20px;   
     align-items: center;
-    justify-content: center;
-    
-   
+    justify-content: center;  
 }
 .short{
     font-family: 'Josefin Sans', sans-serif;
@@ -117,6 +117,30 @@ header nav {
     border-radius: 10px;
     backface-visibility: hidden;   
     margin-top: 15px;
+}
+footer {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 1em;
+}
+
+footer img {
+  width: 2.25em;
+  height: auto;
+  margin: 0 1em;
+  }
+
+footer ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  list-style-type: none;
+}
+
+footer ul li a img {
+  width: 1.5em;
 }
 @media (max-width:850px ) {
     .heading{
