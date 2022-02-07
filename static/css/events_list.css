@@ -72,6 +72,30 @@ header nav ul li a.cta {
   background-color: #575757;
   color: #fff9f9;
 }
+footer {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 1em;
+}
+
+footer img {
+  width: 2.25em;
+  height: auto;
+  margin: 0 1em;
+  }
+
+footer ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  list-style-type: none;
+}
+
+footer ul li a img {
+  width: 1.5em;
+}
 
 .events{
     display: grid;
