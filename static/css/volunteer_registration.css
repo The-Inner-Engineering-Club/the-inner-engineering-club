@@ -1,15 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap");
+
 *{
-    box-sizing: border-box;
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 
 body{
     display: flex;
     flex-direction: column;
-    padding: 10px;
-    margin: 25px;
     background-color: white;
+    font-family: "Manrope", sans-serif;
 }
 
 header nav {
@@ -53,29 +54,33 @@ header nav ul li a.cta {
     background-color: #575757;
     color: #fff9f9;
 }
- 
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+
 .container{
     background-color: #F2EBFB;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    align-self: center;
     border-radius: 10px;
-    height: 122vh;
+    width: 70vw;
     padding: 15px 25px;
-    margin-top: 10px;
-}
-
-.container .content{
-    height: 80vh;
+    margin-top: 20px;
 }
 
 .container .title{
-    font-family: "Manrope", sans-serif;
     font-size: 30px;
     font-weight: 500;
+    /* width: 100%; */
     /* text-align: center; */
     display: flex;
     flex-direction: row;
+    overflow: hidden;
     /* justify-content: center; */
     padding-top: 15px;
     background-color: #F2EBFB;
@@ -84,6 +89,7 @@ header nav ul li a.cta {
 .container .sub-title{
     font-family: "Manrope", sans-serif;
     font-size: 30px;
+    /* width: 100%; */
     /* text-align: center; */
     display: block;
     /* align-items: center; */
@@ -100,12 +106,13 @@ header nav ul li a.cta {
 
 form .user-details .input-box{
     margin-bottom: 15px;
-    width: calc(100% / 2 - 20px);
+    width: 75%;
 }
 
 form .input-box label{
     display: block;
     font-weight: 500;
+    font-size: 17px;
     margin-bottom: 5px;
     margin-left: 5px;
 }
@@ -128,41 +135,29 @@ form .input-box label{
 }
 
 form .button{
-    height: 45px;
-    margin: 35px 0;
-    display: flex;
-    justify-content: space-between;
-}
-
-form .button input{
     height: 100%;
-    width: 100%;
-    margin-left: 10px;
-    margin-right: 10px;
-    border-radius: 10px;
+    width: 90%;
+    align-self: center;
+    padding: 10px 0;
     border: 10px;
-    color: black;
-    font-size: 18px;
+    border-radius: 10px;
+    margin: 15px 0;
+    color: whitesmoke;
+    font-size: 20px;
     font-weight: 500;
-    letter-spacing: 1px;
+    letter-spacing: 1.2px;
     cursor: pointer;
-    transition: all 0.3s ease;
-    background: #ECEAE4;
+    background-color: rgba(135,15,211,1);
 }
 
-form .button input:hover{
-    background: lightgray;
-    transition: 0.5s ease;
+form .button:hover{
+    background-color: rgba(135,15,211,0.5);
+    transition: 0.5s ease-in-out;
 }
 
 form .user-details .input-box{
     margin-bottom: 15px;
     width: 100%;
-}
-
-.content form .user-details{
-    max-height: 500px;
-    overflow-y: scroll;
 }
 
 .user-details::-webkit-scrollbar{
@@ -172,10 +167,57 @@ form .user-details .input-box{
 .team-title{
     display: block;
     font-weight: 500;
+    font-size: 18px;
     margin-bottom: 5px;
     margin-left: 5px;
 }
 
 .team-choice{
-    padding: 5px;
+    padding: 8px;
 }
+
+#creatives{
+    margin-right: 2px;
+}
+
+#social-media{
+    margin-right: 2px;
+}
+
+#content-info{
+    margin-right: 2px;
+}
+
+#logistics{
+    margin-right: 2px;
+}
+
+#publicity{
+    margin-right: 2px;
+}
+
+footer {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 1em;
+  }
+  
+  footer img {
+    width: 2.25em;
+    height: auto;
+    margin: 0 1em;
+  }
+  
+  footer ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    list-style-type: none;
+  }
+  
+  footer ul li a img {
+    width: 1.5em;
+  }
+  
