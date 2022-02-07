@@ -2,19 +2,63 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    font-family: sans-serif;
 }
 
 body{
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     padding: 10px;
     margin: 25px;
-    background-color: #e7e6e0;
+    background-color: white;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5em;
+    font-size: 1.25em;
+    background-color: #fff9f9;
+    border-radius: 0 0 25px 25px;
+    filter: drop-shadow(0px 10px 5px #bebebe);
+  }
+  
+header nav img {
+    width: 2.25em;
+    height: auto;
+    margin: 0 1em;
+}
+  
+header nav ul {
+    list-style-type: none;
+    display: flex;
+}
+  
+header nav ul li {
+    padding: 0.5em;
+}
+  
+header nav ul li a {
+    text-decoration: none;
+    color: #575757;
+    padding: 5px;
+    border-radius: 5px;
+}
+  
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+  
+header nav ul li a.cta {
+    background-color: #575757;
+    color: #fff9f9;
 }
  
 .container{
-    background-color: #ECD5E3;
+    background-color: #F2EBFB;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border-radius: 10px;
     height: 122vh;
     padding: 15px 25px;
@@ -26,31 +70,31 @@ body{
 }
 
 .container .title{
-    font-family: sans-serif;
+    font-family: "Manrope", sans-serif;
     font-size: 30px;
     font-weight: 500;
-    text-align: center;
+    /* text-align: center; */
     display: flex;
-    justify-content: center;
+    flex-direction: row;
+    /* justify-content: center; */
     padding-top: 15px;
-    background-color: #ECD5E3;
+    background-color: #F2EBFB;
 }
 
 .container .sub-title{
-    font-family: sans-serif;
+    font-family: "Manrope", sans-serif;
     font-size: 30px;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: #ECD5E3;
+    /* text-align: center; */
+    display: block;
+    /* align-items: center; */
+    background-color: #F2EBFB;
 }
 
 .content form .user-details{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    font-family: sans-serif;
+    font-family: "Manrope", sans-serif;
     margin: 20px 0 12px 0;
 }
 
@@ -123,34 +167,6 @@ form .user-details .input-box{
 
 .user-details::-webkit-scrollbar{
     width: 5px;
-}
-
-@media(max-width: 998px){
-    .container{
-        max-width: 100%;
-    }
-}
-
-@media screen and (max-width: 768px){
-    .container{
-        height: 122vh;
-        flex-direction: column;
-    }
-
-    .container .content{
-        flex-direction: column;
-    }   
-}
-
-@media screen and (max-width: 600px){
-    .container{
-        height: 130vh;
-        flex-direction: column;
-    }
-
-    .container .content{
-        flex-direction: column;
-    }      
 }
 
 .team-title{
