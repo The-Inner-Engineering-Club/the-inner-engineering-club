@@ -125,9 +125,10 @@ button{
     text-decoration: none;
     border: .2rem solid transparent;
     font-weight: bold;
-    padding: 1.3rem 3rem;
+    padding: 1.4rem 3rem;
     border-radius: 3rem;
     transition: .4s;
+    font-size: 2rem;
 }
 button:hover{
     background: transparent;
