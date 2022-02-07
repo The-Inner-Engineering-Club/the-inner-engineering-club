@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap");
 *{
     margin: 0px;
     padding: 0px;
@@ -6,26 +7,8 @@
 html {
   font-family: "Manrope", sans-serif;
 }
-body {
-  background-color: #f2ebfb;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.heading{
-    height: 56px;
-    margin-left:auto;
-    margin-right:auto;
-    margin-bottom: 30px;
-    font-weight: bold;
-    font-size: 2rem;
-    line-height: 2rem;
-    align-items: center;
-    text-align: center;
-    font-weight: bold;
-    color: purple;
-    padding-top: 40px;
-    
+.body{
+  overflow: hidden; 
 }
 header nav {
   display: flex;
@@ -39,11 +22,14 @@ header nav {
   filter: drop-shadow(0px 10px 5px #bebebe);
   text-decoration: none
 }
-
+header nav a {
+  background-color: #fff9f9;
+}
 header nav img {
   width: 2.25em;
   height: auto;
   margin: 0 1em;
+  background-color: #fff9f9;
 }
 
 header nav ul {
@@ -72,30 +58,16 @@ header nav ul li a.cta {
   background-color: #575757;
   color: #fff9f9;
 }
-footer {
-  display: flex;
+
+.heading{
+  align-items: center;
+  font-size: 2rem;
   text-align: center;
-  align-items: center;
-  justify-content: space-evenly;
-  padding: 1em;
+  font-weight: bold;
+  color: purple;
+  padding-top: 40px;
 }
 
-footer img {
-  width: 2.25em;
-  height: auto;
-  margin: 0 1em;
-  }
-
-footer ul {
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  list-style-type: none;
-}
-
-footer ul li a img {
-  width: 1.5em;
-}
 
 .events{
     display: grid;
@@ -125,6 +97,31 @@ footer ul li a img {
 }
 .box:hover .image img{
     transform: scale(1.1);
+}
+
+footer {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 1em;
+}
+
+footer img {
+  width: 2.25em;
+  height: auto;
+  margin: 0 1em;
+  }
+
+footer ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  list-style-type: none;
+}
+
+footer ul li a img {
+  width: 1.5em;
 }
 
 @media (max-width:850px ) {
