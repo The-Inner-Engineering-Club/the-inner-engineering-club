@@ -5,7 +5,7 @@
   padding: 0;
   box-sizing: border-box;
   
-  background-color: #fff;
+  
   }
 html {
     font-family: "Manrope", sans-serif;
@@ -65,12 +65,11 @@ body{
   .container{
     max-width: 1000px;
     height: 480px;
-    background:#F2EBFB;
-    
     margin: 30px auto;
     box-shadow: 0 0 20px rgba(174, 175, 175, 0.6);
     box-sizing: border-box;
     padding: 40px;
+    background-color:  #F2EBFB;
   }
   
   p{
@@ -80,6 +79,7 @@ body{
     margin-bottom: 15px;
     color: rgba(135,15,211,1);
     font-family: "Manrope", sans-serif;
+    
   }
   
   .input,
@@ -94,7 +94,7 @@ body{
     border-radius: 5px;
     outline: none;
     transform: all 0.5s ease;
-    background-color: white;
+
   }
   
   .login .input{
