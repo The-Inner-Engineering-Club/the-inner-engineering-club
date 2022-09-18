@@ -1,0 +1,83 @@
+{
+  "free": [
+    {
+      "name": "Bloom Clinic",
+      "services": "An overall wellness page run by doctors",
+      "contact": "+91 9408280355"
+    },
+    {
+      "name": "Citta India",
+      "services": "Non-profit offering counselling",
+      "contact": "+91 99818 57665\n +91 7208107955"
+    },
+    {
+      "name": "Devika Khanna",
+      "services": "Counselling Psychologist and Suicide Intervention Specialist",
+      "contact": "+91 8056005158"
+    },
+    {
+      "name": "Mann Talks",
+      "services": "Helpline with professional counsellors",
+      "contact": "+91 8686139139"
+    },
+    {
+      "name": "Peakmind",
+      "services": "An overall wellness page run by doctors",
+      "contact": "+91 8047092334"
+    }
+  ],
+  "paid": [
+    {
+      "name": "Care Me Health",
+      "services": "Mental health service",
+      "contact": "+91 7829002002"
+    },
+    {
+      "name": "Gurpal Kaur",
+      "services": "Councelling Psychologist providing online therapy sessions",
+      "contact": "+91 9899926360"
+    },
+    {
+      "name": "Mindful Mesmerisms",
+      "services": "Individual counselling, free support group",
+      "contact": "+91 9916080594"
+    },
+    {
+      "name": "Sushreeta Sule",
+      "services": "Psychologist",
+      "contact": "+91 8879354954"
+    },
+    {
+      "name": "Aakriti Vachhani",
+      "services": "Counselling Therapist",
+      "contact": "+91 9654319324"
+    }
+  ],
+  "subsidized": [
+    {
+      "name": " Aakriti Vachhani",
+      "services": "Counselling Therapist",
+      "contact": "+91 9654319324"
+    },
+    {
+      "name": "Divya Mukhopadhyay",
+      "services": "Psychologist",
+      "contact": "+91 9619118669"
+    },
+    {
+      "name": "Dr. Umesh Wadhavani",
+      "services": "Wellness Coach",
+      "contact": "+91 8000001025"
+    },
+    {
+      "name": "Fortis Mental Health",
+      "services": "Fortis National Mental Health Program led by Dr. Samir Parikh.",
+      "contact": "+91 8376804102"
+    },
+    {
+      "name": "Harkirat Arora",
+      "services": "Psychologist",
+      "contact": "+91 8600064564"
+    }
+  ]
+}
