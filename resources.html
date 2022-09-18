@@ -4,14 +4,14 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About Us</title>
-    <link rel="stylesheet" href="static/css/about.css" />
+    <title>Resources</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="./static/css/style.css" />
   </head>
   <body>
     <header>
@@ -37,41 +37,43 @@
       </nav>
     </header>
 
-    <section class="about">
-      <div class="main">
-        <img src="static/images/logo.png" alt="" />
-        <div class="about-text">
-          <h1>About Us</h1>
-          <h5>Objectives<span> and Goals</span></h5>
-          <p>
-            <b
-              >TIE Club was founded in 2018 with a Mission to propagate the AKA
-              of Mental Health: Increasing Awareness that Mental Health issues
-              exist, improving Knowledge on what these issues are & how to cope
-              with them and providing Access to professional help.</b
-            >
-          </p>
-          <p>
-            <b
-              >The Goal was to create a conducive environment for discussion
-              without judgement, for promoting a solution-oriented rather than
-              problem-oriented approach. In the 2 years of operation so far, we
-              have succeeded in reaching out to students one event at a time and
-              creating the very kind of environment we were aiming for.</b
-            >
-          </p>
-          <button
-            onclick="location.href='https://discord.gg/2bnYae5C3Q'"
-            target="_blank"
-            type="button"
-          >
-            let's talk
-          </button>
+    <section class="resources">
+      <div class="container">
+        <div class="free">
+          <h3>Free</h3>
+          <table id="freeTable">
+            <tr>
+              <th>Name</th>
+              <th>Services</th>
+              <th>Contact</th>
+            </tr>
+          </table>
+        </div>
+        <div class="paid">
+          <h3>Paid</h3>
+          <table id="paidTable">
+            <tr>
+              <th>Name</th>
+              <th>Services</th>
+              <th>Contact</th>
+            </tr>
+          </table>
+        </div>
+        <div class="subsidized">
+          <h3>Subsidized</h3>
+          <table id="subsidizedTable">
+            <tr>
+              <th>Name</th>
+              <th>Services</th>
+              <th>Contact</th>
+            </tr>
+          </table>
         </div>
       </div>
     </section>
+
     <footer>
-      <span style="font-size: 165%">© 2022 The Inner Engineering Club</span>
+      <span>© 2022 The Inner Engineering Club</span>
       <a href="index.html"
         ><img src="static/images/logo.png" alt="TIE Club Logo"
       /></a>
@@ -125,5 +127,48 @@
         </li>
       </ul>
     </footer>
+
+    <script>
+      fetch("./static/data/resources.json")
+        .then((response) => response.json())
+        .then((json) => {
+          const freeTable = document.getElementById("freeTable");
+          const paidTable = document.getElementById("paidTable");
+          const subsidizedTable = document.getElementById("subsidizedTable");
+          json.free.forEach((element) => {
+            let name = document.createElement("td");
+            let service = document.createElement("td");
+            let contact = document.createElement("td");
+            let tr = document.createElement("tr");
+            name.innerText = element.name;
+            service.innerText = element.services;
+            contact.innerText = element.contact;
+            tr.append(name, service, contact);
+            freeTable.appendChild(tr);
+          });
+          json.paid.forEach((element) => {
+            let name = document.createElement("td");
+            let service = document.createElement("td");
+            let contact = document.createElement("td");
+            let tr = document.createElement("tr");
+            name.innerText = element.name;
+            service.innerText = element.services;
+            contact.innerText = element.contact;
+            tr.append(name, service, contact);
+            paidTable.appendChild(tr);
+          });
+          json.subsidized.forEach((element) => {
+            let name = document.createElement("td");
+            let service = document.createElement("td");
+            let contact = document.createElement("td");
+            let tr = document.createElement("tr");
+            name.innerText = element.name;
+            service.innerText = element.services;
+            contact.innerText = element.contact;
+            tr.append(name, service, contact);
+            subsidizedTable.appendChild(tr);
+          });
+        });
+    </script>
   </body>
 </html>
